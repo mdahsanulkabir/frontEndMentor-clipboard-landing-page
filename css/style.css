@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cyan: hsl(171, 66%, 44%);
+    --light_blue: hsl(233, 100%, 69%);
+    --dark_grayish-blue: hsl(210, 10%, 33%);
+    --grayish_blue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+p {
+    color: var(--grayish_blue);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--dark_grayish-blue);
+    font-size: 32px;
+    font-weight: 600;
+    padding-inline: 30px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--dark_grayish-blue);
+    font-size: 28px;
+    font-weight: 600;
+    padding-inline: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: var(--dark_grayish-blue);
+    font-size: 24px;
+    font-weight: 600;
+    padding-inline: 30px;
+    margin-bottom: 15px;
+}
+
+.header p {
+    padding-inline: 25px;
+    margin-bottom: 40px;
+}
+
+.download   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.download button {
+    width: 320px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.iOS {
+    background-color: var(--cyan);
+    box-shadow: 0 5px 30px rgba(119, 228, 212, 0.603);
+}
+
+.Mac {
+    background-color: var(--light_blue);
+    box-shadow: 0 5px 30px rgba(147, 157, 236, 0.829);
+}
+
+.feature {
+    margin-top: 120px;
+}
+
+.feature>p,
+.access>p {
+    padding-inline: 30px;
+    margin-bottom: 50px;
+}
+
+.pc-picture,
+.device {
+    width: 100%;
+    padding-inline: 30px;
+    margin-bottom: 50px;
+}
+
+.pc-picture img,
+.device img {
+    width: 100%;
+}
+
+.feature-list *>p {
+    margin-bottom: 40px;
+    padding-inline: 30px;
+}
+
+.access {
+    margin-top: 180px;
+}
+
+.device {
+    padding-inline: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
