@@ -223,13 +223,19 @@ li a:hover {
 
 
 @media (min-width:700px) {
-    
-    .feature>p {
+    body {
+        background-image: url("../images/bg-header-desktop.png");
+    }
+    p, .feature>p,
+    .access > p {
         max-width: 660px;
         text-align: center;
+        margin-inline: auto;
     }
     .features,
     .productivity-features {
+        max-width: 800px;
+        margin-inline: auto;
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -240,15 +246,22 @@ li a:hover {
         flex: 1 0 325px;
     }
     .brand-logo {
+        max-width: 760px;
+        margin-inline: auto;
         flex-direction: row;
         flex-wrap: wrap;
         padding-inline: 30px;
         justify-content: center;
     }
+    .nav {
+        max-width: 700px;
+        margin-inline: auto;
+    }
     .nav ul {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        row-gap: 15px;
     }
     ul li {
         flex-basis: 200px;
@@ -256,7 +269,93 @@ li a:hover {
     }
 }
 
+@media (min-width:800px) {
+    .download {
+        flex-direction: row;
+        max-width: 700px;
+        margin-inline: auto;
+        justify-content: center;
+        column-gap: 25px;
+    }
+    .nav {
+        max-width: 800px;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 5vw;
+    }
+    .product-logo {     
+        flex-basis: 150px;
+        text-align: right;
+    }
+    .nav ul {
+        flex-basis: 450px;
+        justify-content: flex-start;
+    }
+    ul li { 
+        flex-basis: 200px;
+    }
+    .social-logo {
+        margin-left: auto;
+    }
+    .device {
+        padding-inline: 10%;
+    }
+}
 
+@media (min-width : 1000px) {
+    section {
+        max-width: 1200px;
+        margin-inline:auto;
+    }
+    .nav {
+        width: 90%;
+        max-width:1000px;
+    }
+    .product-logo {
+        text-align: center;
+    }
+    .nav ul {
+        flex-basis: 900px;
+    }
+    .productivity-features {
+        flex-wrap: nowrap;
+    }
+    .brand-logo {
+        flex-wrap:nowrap;
+    }
+    .features > * > * {
+        text-align: left;
+    }
+    .feature-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 30px;
+    }
+    .pc-picture {
+        flex-basis: 180%;
+        align-self: flex-start;
+    }
+    
+}
+
+@media (min-width:1200px) {
+    .feature-list {
+        height: 463px;
+        
+    }
+    .pc-picture {
+        position: relative;
+        width: 600px;
+        
+    }
+    .pc-picture img {
+        position: absolute;
+/*         right: 30px; */
+        left: -150px;
+    }
+}
 
 
 
